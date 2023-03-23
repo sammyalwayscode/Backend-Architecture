@@ -1,4 +1,4 @@
-export enum Httcode {
+export enum Httpcode {
   OK = 200,
   CREATED = 201,
   BAD_REQUEST = 400,
@@ -14,13 +14,13 @@ interface ErrorArgs {
   name?: string;
   isOperational?: boolean;
   message: string;
-  httpCode: Httcode;
+  httpCode: Httpcode;
 }
 
 export class AppError extends Error {
   public readonly name: string;
   public readonly isOperational: boolean = true;
-  public readonly httpCode: Httcode;
+  public readonly httpCode: Httpcode;
   constructor(args: ErrorArgs) {
     super(args.message);
 

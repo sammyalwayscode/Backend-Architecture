@@ -19,6 +19,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/morgan": "^1.9.4",
     "@types/node": "^18.15.0",
+    "@types/validator": "^13.7.14",
     "cookie-parser": "^1.4.6"
   },
   "dependencies": {

@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
-import { AppError, Httcode } from "../../utils/appError";
+import { AppError, Httpcode } from "../../utils/appError";
 
 const devError = (err: AppError, res: Response) => {
-  return res.status(Httcode.INTERNAL_SERVER_ERROR).json({
+  return res.status(Httpcode.INTERNAL_SERVER_ERROR).json({
     error: err,
     status: err.httpCode,
     mesage: err.message,
